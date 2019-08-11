@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>my.camel.learn</groupId>
+	<artifactId>camel-request-reply-mq</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>camel-request-reply-mq</name>
+	<description>Learning camel</description>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.camel/camel-core -->
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-core</artifactId>
+			<version>3.0.0-M4</version>
+		</dependency>
+
+		<!-- Dependency for slf4j api impl, after this log4j.properties is required -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		
+		<!-- camel-jms dependency -->
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-jms</artifactId>
+			<version>3.0.0-M4</version>
+		</dependency>
+
+		<!-- Apache Active MQ Jars -->
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-client</artifactId>
+			<version>5.14.5</version>
+		</dependency>
+
+	</dependencies>
+
+</project>
